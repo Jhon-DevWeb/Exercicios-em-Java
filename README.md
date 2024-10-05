@@ -1,2 +1,3 @@
-# Exercicios em Java
- códigos em java ( exercícios matemáticos )
+# Exercícios em Java
+
+códigos em java ( Exercícios Matemáticos )
