@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Digite um número");
+        Scanner sc = new Scanner(System.in);
+        int dia = sc.nextInt();
+
+        switch (dia) {
+            case 1 -> System.out.println("Dia da Semana: Domingo");
+            case 2 -> System.out.println("Dia da Semana: Segunda");
+            case 3 -> System.out.println("Dia da Semana: Terca");
+            case 4 -> System.out.println("Dia da Semana: Quarta");
+            case 5 -> System.out.println("Dia da Semana: Quinta");
+            case 6 -> System.out.println("Dia da Semana: Sexta");
+            case 7 -> System.out.println("Dia da Semana: Sabado");
+            default -> System.out.println("Opcão Invalida");
+        }
+
+        sc.close();
+    }
+}

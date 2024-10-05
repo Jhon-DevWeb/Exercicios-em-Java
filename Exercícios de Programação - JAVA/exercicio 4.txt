@@ -1,0 +1,21 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int senha = 2024;
+        System.out.println("Digite sua senha: ");
+        Scanner sc = new Scanner(System.in);
+        senha = sc.nextInt();
+
+        while (senha != 2024) {
+            System.out.println("Senha incorreta! ");
+            senha = sc.nextInt();
+        }
+        System.out.println("Acesso Permitido! ");
+        sc.close();
+
+    }
+}

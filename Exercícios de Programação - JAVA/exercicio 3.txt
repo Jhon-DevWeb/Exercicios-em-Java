@@ -1,0 +1,40 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("1 - Cachorro Quente: R$ 4,00");
+        System.out.println("2 - X-Salada: R$ 4,50");
+        System.out.println("3 - X-Bacon: R$ 5,00");
+        System.out.println("4 - Torrada simples: R$ 2,00");
+        System.out.println("5 - Refrigerante : R$ 1,50");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite uma opção: ");
+        int opcao = sc.nextInt();
+        System.out.print("Digite a quantidade: ");
+        int quantidade = sc.nextInt();
+
+        if (opcao == 1) {
+            double total = quantidade * 4.00;
+            System.out.println("Valor a pagar Cachorro quente R$: " + total);
+        } else if (opcao == 2) {
+            double total = quantidade * 4.50;
+            System.out.println("Valor a pagar X-Salada R$: " + total);
+        } else if (opcao == 3) {
+            double total = quantidade * 5.00;
+            System.out.println("Valor a pagar X-Bacon R$: " + total);
+        } else if (opcao == 4) {
+            double total = quantidade * 2.00;
+            System.out.println("Valor a pagar Torrada simples R$: " + total);
+        } else if (opcao == 5) {
+            double total = quantidade * 1.50;
+            System.out.println("Valor a pagar Refrigerante R$: " + total);
+        } else {
+            System.out.println("Opção Invalida");
+        }
+        sc.close();
+
+    }
+}
